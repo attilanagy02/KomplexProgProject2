@@ -7,24 +7,38 @@
     <script src='main.js'></script>
 </head>
 <body>
-    <header>
-        <h1>Amőba játék</h1>
-        <h2>Több választahtó pályával</h2>
-    </header>
-    <div id="palyak">
-        <p>Válassza ki, hogy milyen pályán szeretne játszani!</p>
-        <input type="radio" id="x3" name="meret" value="x3">3x3
-        <input type="radio" id="x6" name="meret" value="x9">6x6
-        <input type="radio" id="x9" name="meret" value="x9">9x9
-    </div>
-    <div id="palya3" class="palya">
+    <div id="main">
+        <h1>Amőba</h1>
+        <p id="ins">A játék az első kattintással kezdődik<br><br>Az első játékos: 
+            <b>Egyes játékos(X)</b><br>És<br>Második 
+            Játékos: <b>Kettes játékos(0)</b>
+        </p>
+        
+        <br><br>
+        <input type="text" id="b1" onclick="myfunc_3(); myfunc();" readonly>
+  
+        <input type="text" id="b2" onclick="myfunc_4(); myfunc();" readonly>
+  
+        <input type="text" id="b3" onclick="myfunc_5(); myfunc();" readonly>
+        <br><br>
+  
+        <input type="text" id="b4" onclick="myfunc_6(); myfunc();" readonly>
+              
+        <input type="text" id="b5" onclick="myfunc_7(); myfunc();" readonly>
 
-    </div>
-    <div id="palya6" class="palya">
+        <input type="text" id="b6" onclick="myfunc_8(); myfunc();" readonly>
+        <br><br>
 
-    </div>
-    <div id="palya9" class="palya">
+        <input type="text" id="b7" onclick="myfunc_9(); myfunc();" readonly>
 
-    </div>
+        <input type="text" id="b8" onclick="myfunc_10();myfunc();" readonly>
+
+        <input type="text" id="b9" onclick="myfunc_11();myfunc();" readonly>
+        <br><br><br>
+
+        <button id="but" onclick="myfunc_2()">RESET</button>
+
+        <br><br>
+        <p id="print"></p>
 </body>
 </html>
